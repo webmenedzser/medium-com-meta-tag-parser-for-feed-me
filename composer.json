@@ -1,0 +1,41 @@
+{
+    "name": "webmenedzser/feed-me-medium-com-meta-tag-parser",
+    "description": "Adds meta tag information to Medium.com feed - a Feed Me plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "feed me - medium.com meta tag parser"
+    ],
+    "support": {
+        "docs": "https://github.com/webmenedzser/feed-me-medium-com-meta-tag-parser/blob/master/README.md",
+        "issues": "https://github.com/webmenedzser/feed-me-medium-com-meta-tag-parser/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ottó Radics",
+            "homepage": "https://www.wbmngr.agency"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "craftcms/feed-me": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "webmenedzser\\feedmemediumcommetatagparser\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Feed Me - Medium.com meta tag parser",
+        "handle": "feed-me-medium-com-meta-tag-parser",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/webmenedzser/feed-me-medium-com-meta-tag-parser/master/CHANGELOG.md",
+        "class": "webmenedzser\\feedmemediumcommetatagparser\\FeedMeMediumcomMetaTagParser"
+    }
+}
