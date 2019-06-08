@@ -10,14 +10,14 @@
 
 namespace webmenedzser\feedmemediumcommetatagparser\helpers;
 
-use webmenedzser\feedmemediumcommetatagparser\FeedMeMediumcomMetaTagParser;
+use webmenedzser\feedmemediumcommetatagparser\FeedMeMediumComMetaTagParser;
 
 use Craft;
 use craft\base\Component;
 
 /**
  * @author    Ottó Radics
- * @package   FeedMeMediumcomMetaTagParser
+ * @package   FeedMeMediumComMetaTagParser
  * @since     1.0.0
  */
 class MediumFeedCheckerHelper extends Component

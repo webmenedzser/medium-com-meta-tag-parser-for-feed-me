@@ -10,7 +10,7 @@
 
 namespace webmenedzser\feedmemediumcommetatagparser\services;
 
-use webmenedzser\feedmemediumcommetatagparser\FeedMeMediumcomMetaTagParseruse;
+use webmenedzser\feedmemediumcommetatagparser\FeedMeMediumComMetaTagParser;
 use webmenedzser\feedmemediumcommetatagparser\helpers\UrlHelper;
 
 use Craft;

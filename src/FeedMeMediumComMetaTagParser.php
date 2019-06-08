@@ -10,7 +10,6 @@
 
 namespace webmenedzser\feedmemediumcommetatagparser;
 
-use nystudio107\seomatic\models\MetaTag;
 use webmenedzser\feedmemediumcommetatagparser\helpers\MediumFeedCheckerHelper as MediumFeedCheckerHelper;
 use webmenedzser\feedmemediumcommetatagparser\helpers\UrlHelper as UrlHelper;
 use webmenedzser\feedmemediumcommetatagparser\helpers\XmlHelper as XmlHelper;
@@ -36,19 +35,19 @@ use yii\base\Event;
  * https://craftcms.com/docs/plugins/introduction
  *
  * @author    Ottó Radics
- * @package   FeedMeMediumcomMetaTagParser
+ * @package   FeedMeMediumComMetaTagParser
  * @since     1.0.0
  */
-class FeedMeMediumcomMetaTagParser extends Plugin
+class FeedMeMediumComMetaTagParser extends Plugin
 {
     // Static Properties
     // =========================================================================
 
     /**
      * Static property that is an instance of this plugin class so that it can be accessed via
-     * FeedMeMediumcomMetaTagParser::$plugin
+     * FeedMeMediumComMetaTagParser::$plugin
      *
-     * @var FeedMeMediumcomMetaTagParser
+     * @var FeedMeMediumComMetaTagParser
      */
     public static $plugin;
 
@@ -95,7 +94,7 @@ class FeedMeMediumcomMetaTagParser extends Plugin
 
     /**
      * Set our $plugin static property to this class so that it can be accessed via
-     * FeedMeMediumMetaTagParser::$plugin
+     * FeedMeMediumComMetaTagParser::$plugin
      *
      * Called after the plugin class is instantiated; do any one-time initialization
      * here such as hooks and events.
