@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.4 - 2019-06-08
+### Fixed
+- Let's try again this "new release" thing
+
 ## 1.0.3 - 2019-06-08
 ### Fixed
 - Forgot to rename plugin file to follow changed class name, which caused an "Unable to determine base path" error
