@@ -36,6 +36,6 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/webmenedzser/feed-me-medium-com-meta-tag-parser/master/CHANGELOG.md",
-        "class": "webmenedzser\\feedmemediumcommetatagparser\\FeedMeMediumcomMetaTagParser"
+        "class": "webmenedzser\\feedmemediumcommetatagparser\\FeedMeMediumComMetaTagParser"
     }
 }
