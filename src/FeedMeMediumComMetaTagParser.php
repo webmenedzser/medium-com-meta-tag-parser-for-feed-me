@@ -1,6 +1,6 @@
 <?php
 /**
- * Feed Me - Medium.com meta tag parser plugin for Craft CMS 3.x
+ * Medium.com Meta Tag Parser for Feed Me
  *
  * Add meta tags to Medium.com feeds - Feed Me plugin
  *
@@ -8,12 +8,12 @@
  * @copyright Copyright (c) 2019 Ottó Radics
  */
 
-namespace webmenedzser\feedmemediumcommetatagparser;
+namespace webmenedzser\mediumcommetatagparserforfeedme;
 
-use webmenedzser\feedmemediumcommetatagparser\helpers\MediumFeedCheckerHelper as MediumFeedCheckerHelper;
-use webmenedzser\feedmemediumcommetatagparser\helpers\UrlHelper as UrlHelper;
-use webmenedzser\feedmemediumcommetatagparser\helpers\XmlHelper as XmlHelper;
-use webmenedzser\feedmemediumcommetatagparser\services\MetaTagParser as MetaTagParser;
+use webmenedzser\mediumcommetatagparserforfeedme\helpers\MediumFeedCheckerHelper as MediumFeedCheckerHelper;
+use webmenedzser\mediumcommetatagparserforfeedme\helpers\UrlHelper as UrlHelper;
+use webmenedzser\mediumcommetatagparserforfeedme\helpers\XmlHelper as XmlHelper;
+use webmenedzser\mediumcommetatagparserforfeedme\services\MetaTagParser as MetaTagParser;
 
 use Craft;
 use craft\base\Plugin;
@@ -35,19 +35,19 @@ use yii\base\Event;
  * https://craftcms.com/docs/plugins/introduction
  *
  * @author    Ottó Radics
- * @package   FeedMeMediumComMetaTagParser
+ * @package   MediumComMetaTagParserForFeedMe
  * @since     1.0.0
  */
-class FeedMeMediumComMetaTagParser extends Plugin
+class MediumComMetaTagParserForFeedMe extends Plugin
 {
     // Static Properties
     // =========================================================================
 
     /**
      * Static property that is an instance of this plugin class so that it can be accessed via
-     * FeedMeMediumComMetaTagParser::$plugin
+     * MediumComMetaTagParserForFeedMe::$plugin
      *
-     * @var FeedMeMediumComMetaTagParser
+     * @var MediumComMetaTagParserForFeedMe
      */
     public static $plugin;
 
@@ -94,7 +94,7 @@ class FeedMeMediumComMetaTagParser extends Plugin
 
     /**
      * Set our $plugin static property to this class so that it can be accessed via
-     * FeedMeMediumComMetaTagParser::$plugin
+     * MediumComMetaTagParserForFeedMe::$plugin
      *
      * Called after the plugin class is instantiated; do any one-time initialization
      * here such as hooks and events.
