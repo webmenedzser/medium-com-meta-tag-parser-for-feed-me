@@ -1,8 +1,8 @@
 {
-    "name": "webmenedzser/feed-me-medium-com-meta-tag-parser",
+    "name": "webmenedzser/medium-com-meta-tag-parser-for-feed-me",
     "description": "Adds meta tag information to Medium.com feed - a Feed Me plugin",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
@@ -11,8 +11,8 @@
         "feed me - medium.com meta tag parser"
     ],
     "support": {
-        "docs": "https://github.com/webmenedzser/feed-me-medium-com-meta-tag-parser/blob/master/README.md",
-        "issues": "https://github.com/webmenedzser/feed-me-medium-com-meta-tag-parser/issues"
+        "docs": "https://github.com/webmenedzser/medium-com-meta-tag-parser-for-feed-me/blob/master/README.md",
+        "issues": "https://github.com/webmenedzser/medium-com-meta-tag-parser-for-feed-me/issues"
     },
     "license": "MIT",
     "authors": [
@@ -27,15 +27,15 @@
     },
     "autoload": {
         "psr-4": {
-          "webmenedzser\\feedmemediumcommetatagparser\\": "src/"
+          "webmenedzser\\mediumcommetatagparserforfeedme\\": "src/"
         }
     },
     "extra": {
-        "name": "Feed Me - Medium.com meta tag parser",
-        "handle": "feed-me-medium-com-meta-tag-parser",
+        "name": "Medium.com Meta Tag Parser for Feed Me",
+        "handle": "medium-com-meta-tag-parser-for-feed-me",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/webmenedzser/feed-me-medium-com-meta-tag-parser/master/CHANGELOG.md",
-        "class": "webmenedzser\\feedmemediumcommetatagparser\\FeedMeMediumComMetaTagParser"
+        "changelogUrl": "https://raw.githubusercontent.com/webmenedzser/medium-com-meta-tag-parser-for-feed-me/master/CHANGELOG.md",
+        "class": "webmenedzser\\mediumcommetatagparserforfeedme\\MediumComMetaTagParserForFeedMe"
     }
 }

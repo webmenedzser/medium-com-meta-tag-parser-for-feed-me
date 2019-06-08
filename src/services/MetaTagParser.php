@@ -1,6 +1,6 @@
 <?php
 /**
- * Feed Me - Medium.com meta tag parser plugin for Craft CMS 3.x
+ * Medium.com Meta Tag Parser for Feed Me
  *
  * Add meta tags to Medium.com feeds - Feed Me plugin
  *
@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2019 Ottó Radics
  */
 
-namespace webmenedzser\feedmemediumcommetatagparser\services;
+namespace webmenedzser\mediumcommetatagparserforfeedme\services;
 
-use webmenedzser\feedmemediumcommetatagparser\FeedMeMediumComMetaTagParser;
-use webmenedzser\feedmemediumcommetatagparser\helpers\UrlHelper;
+use webmenedzser\mediumcommetatagparserforfeedme\MediumComMetaTagParserForFeedMe;
+use webmenedzser\mediumcommetatagparserforfeedme\helpers\UrlHelper;
 
 use Craft;
 use craft\base\Component;
