@@ -27,7 +27,7 @@ class MediumFeedCheckerHelper extends Component
      * @return bool
      */
     public static function isMediumFeed($data) {
-        if (strpos($data, 'CDATA[yourfriends@medium.com]')) {
+        if (strpos($data, 'yourfriends@medium.com')) {
             return true;
         }
 
