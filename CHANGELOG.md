@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.5 - 2019-07-10
+### Changed
+- Regex rule was updated and the parsing code was refactored to catch meta tags again
+
+### Fixed
+- Medium feeds are found again.
+
 ## 1.0.4 - 2019-06-08
 ### Fixed
 - Let's try again this "new release" thing

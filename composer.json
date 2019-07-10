@@ -2,7 +2,7 @@
     "name": "webmenedzser/medium-com-meta-tag-parser-for-feed-me",
     "description": "Adds meta tag information to Medium.com feed - a Feed Me plugin",
     "type": "craft-plugin",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "craft",
         "cms",
