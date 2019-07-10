@@ -25,6 +25,7 @@ class UrlHelper extends Component
 {
     // Based on mariano at cricava dot com's work
     // Source: https://www.php.net/manual/en/function.get-meta-tags.php
+    // Heavily refactored with 1.0.5
     public static function getUrlData($url)
     {
         $result = false;
@@ -33,43 +34,19 @@ class UrlHelper extends Component
 
         if (isset($contents) && is_string($contents))
         {
-            $title = null;
             $metaTags = null;
             $metaProperties = null;
 
-            preg_match('/<title>([^>]*)<\/title>/si', $contents, $match );
+            preg_match_all(
+                '/(.*?(name|property)="(.*?)").*?(content|value)="(.*?)"/',
+                $contents,
+                $match
+            );
 
-            if (isset($match) && is_array($match) && count($match) > 0)
-            {
-                $title = strip_tags($match[1]);
-            }
+            $names = $match[3];
+            $values = $match[5];
 
-            preg_match_all('/<[\s]*meta[\s]*(name|property)="?' . '([^>"]*)"?[\s]*' . 'content="?([^>"]*)"?[\s]*[\/]?[\s]*>/si', $contents, $match);
-
-            if (isset($match) && is_array($match) && count($match) == 4)
-            {
-                $originals = $match[0];
-                $names = $match[2];
-                $values = $match[3];
-
-                if (count($originals) == count($names) && count($names) == count($values))
-                {
-                    $metaTags = array();
-                    $metaProperties = $metaTags;
-
-                    for ($i=0, $limiti=count($names); $i < $limiti; $i++)
-                    {
-                        if ($match[1][$i] == 'name')
-                            $meta_type = 'metaTags';
-                        else
-                            $meta_type = 'metaProperties';
-
-                        ${$meta_type}[$names[$i]] = $values[$i];
-                    }
-                }
-            }
-
-            $result = array_merge($metaTags, $metaProperties);
+            $result = array_combine($names, $values);
         }
 
         return $result;
