@@ -10,6 +10,7 @@
 
 namespace webmenedzser\mediumcommetatagparserforfeedme;
 
+use webmenedzser\mediumcommetatagparserforfeedme\helpers\LogHelper as LogHelper;
 use webmenedzser\mediumcommetatagparserforfeedme\helpers\MediumFeedCheckerHelper as MediumFeedCheckerHelper;
 use webmenedzser\mediumcommetatagparserforfeedme\helpers\UrlHelper as UrlHelper;
 use webmenedzser\mediumcommetatagparserforfeedme\helpers\XmlHelper as XmlHelper;
