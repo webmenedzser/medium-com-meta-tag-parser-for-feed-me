@@ -60,7 +60,7 @@ class MediumComMetaTagParserForFeedMe extends Plugin
      *
      * @var string
      */
-    public $schemaVersion = '1.0.0';
+    public string $schemaVersion = '1.0.0';
 
     /*
      * Collect article URLs into this array.
