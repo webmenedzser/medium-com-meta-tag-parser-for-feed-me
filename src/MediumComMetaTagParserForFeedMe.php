@@ -127,13 +127,17 @@ class MediumComMetaTagParserForFeedMe extends Plugin
 
     private function _processFeed($event) {
         $data = $event->response['data'];
-        $this->items = XmlHelper::findItems($data);
-        $this->count = count($this->items);
-        $this->urls = XmlHelper::findUrls($data);
+        $mediumFeed = MediumFeedCheckerHelper::isMediumFeed($event->response['data']);
 
-        $metaTags = MetaTagParser::collectMetaTagsFromUrls($this->urls);
-        foreach ($metaTags as $key => $value) {
-            $this->data[] = $value;
+        if ($mediumFeed) {
+            $this->items = XmlHelper::findItems($data);
+            $this->count = count($this->items);
+            $this->urls = XmlHelper::findUrls($data);
+
+            $metaTags = MetaTagParser::collectMetaTagsFromUrls($this->urls);
+            foreach ($metaTags as $key => $value) {
+                $this->data[] = $value;
+            }
         }
     }
 
